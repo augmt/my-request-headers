@@ -1,0 +1,23 @@
+{
+  "name": "my-request-headers",
+  "version": "1.0.0",
+  "description": "Request Header Parser Microservice",
+  "main": "index.js",
+  "dependencies": {
+    "express": "4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hector Garcia",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augmt/my-request-headers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/augmt/my-request-headers/issues"
+  },
+  "homepage": "https://github.com/augmt/my-request-headers#readme"
+}

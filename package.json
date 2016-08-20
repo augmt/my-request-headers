@@ -1,23 +1,28 @@
 {
-  "name": "my-request-headers",
+  "name": "request-header-parser-microservice",
   "version": "1.0.0",
   "description": "Request Header Parser Microservice",
-  "main": "index.js",
-  "dependencies": {
-    "express": "4.14.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Hector Garcia",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/augmt/my-request-headers.git"
+  "author": {
+    "name": "Hector Garcia",
+    "email": "soseinhg3@gmail.com"
   },
-  "bugs": {
-    "url": "https://github.com/augmt/my-request-headers/issues"
+  "main": "app.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --slow 200"
   },
-  "homepage": "https://github.com/augmt/my-request-headers#readme"
+  "dependencies": {
+    "kcors": "2.1.1",
+    "koa": "2.0.0-alpha.5",
+    "koa-json": "2.0.2",
+    "koa-router": "7.0.1",
+    "useragent": "2.1.9"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "supertest": "^2.0.0"
+  },
+  "private": true
 }

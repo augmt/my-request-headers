@@ -1,6 +1,10 @@
-# [API Basejump][1]: Request Header Parser Microservice
+Request Header Parser Microservice
+==================================
 
-[1]: https://www.freecodecamp.com/challenges/request-header-parser-microservice
+Get your browser's reported IP address, language preference, and operating
+system via a JSON repsonse.
 
-Displays the visitor's IP address, language preference, and operating system as
-JSON-formatted data.
+Notes
+-----
+The microservice can ONLY be accessed via GET requests.  
+The microservice supports CORS requests from any origin.

@@ -16,11 +16,14 @@ describe('app', function () {
     request(server)
       .get('/')
       .set({'accept-language': '', 'x-forwarded-for': ''})
-      .end(function (err, res) {
-        expect(err).to.be.null;
-        expect(res.body).to.have.all.keys(['ipaddress', 'language', 'software']);
-        done();
-      });
+      .expect(function (res) {
+        expect(res.body).to.have.all.keys([
+          'ipaddress',
+          'language',
+          'software'
+        ]);
+      })
+      .end(done);
   });
 
   it('should respond with the client\'s IP address');

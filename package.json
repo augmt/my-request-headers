@@ -2,27 +2,32 @@
   "name": "request-header-parser-microservice",
   "version": "1.0.0",
   "description": "Request Header Parser Microservice",
-  "license": "ISC",
+  "license": "MIT",
   "author": {
     "name": "Hector Garcia",
     "email": "soseinhg3@gmail.com"
   },
-  "main": "app.js",
+  "main": "lib/app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augmt/request-header-parser-microservice.git"
+  },
   "scripts": {
-    "start": "node index.js",
-    "test": "mocha --slow 200"
+    "build": "babel src -d lib",
+    "test": "tape -r babel-register test/test.js"
   },
   "dependencies": {
-    "kcors": "2.1.1",
-    "koa": "2.0.0-alpha.5",
-    "koa-json": "2.0.2",
+    "koa": "2.0.0-alpha.7",
     "koa-router": "7.0.1",
     "useragent": "2.1.9"
   },
   "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.16.0",
+    "babel-register": "^6.16.3",
     "chai": "^3.5.0",
-    "mocha": "^3.0.2",
-    "supertest": "^2.0.0"
+    "supertest": "^2.0.0",
+    "tape": "^4.6.1"
   },
   "private": true
 }

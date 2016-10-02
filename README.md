@@ -1,7 +1,7 @@
 # Request Header Parser Microservice
 
-Request Header Parser Microservice displays your browser's reported IP address,
-language preference, and operating system.
+Request Header Parser Microservice is a REST API which displays your browser's
+reported IP address, language preference, and operating system.
 
 ## Resources
 

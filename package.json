@@ -1,6 +1,6 @@
 {
-  "name": "request-header-parser-microservice",
-  "version": "1.0.0",
+  "name": "@augmt/request-header-parser-microservice",
+  "version": "0.2.4",
   "description": "Request Header Parser Microservice",
   "license": "MIT",
   "author": {
@@ -14,6 +14,7 @@
   },
   "scripts": {
     "build": "babel src -d lib",
+    "publish": "npm run build",
     "test": "tape -r babel-register test/test.js"
   },
   "dependencies": {
@@ -28,6 +29,5 @@
     "chai": "^3.5.0",
     "supertest": "^2.0.0",
     "tape": "^4.6.1"
-  },
-  "private": true
+  }
 }
